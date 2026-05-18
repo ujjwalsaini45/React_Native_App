@@ -1,0 +1,421 @@
+ <Button  title='press Me'>
+
+      </Button>
+  {/* <TouchableOpacity
+  style={{
+    padding: 10,
+    backgroundColor: 'green',
+    borderRadius: 8,
+    alignItems: 'center',
+  }}
+  onPress={() => Alert.alert('Pressed')}
+>
+  <Text style={{ color: 'white', fontSize: 16 }}>
+    Button
+  </Text>
+</TouchableOpacity> */}
+
+/*Most Used */
+
+<Pressable style={{
+    padding: 10,
+    backgroundColor: 'green'}} >
+
+    <Text>Press Me</Text>
+
+</Pressable>
+
+
+const dummy = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john.doe1@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 3,
+    name: "Michael Johnson",
+    email: "michael.johnson@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    email: "emily.davis@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 5,
+    name: "David Wilson",
+    email: "david.wilson@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 6,
+    name: "Sarah Brown",
+    email: "sarah.brown@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 7,
+    name: "Chris Miller",
+    email: "chris.miller@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 8,
+    name: "Jessica Taylor",
+    email: "jessica.taylor@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 9,
+    name: "Daniel Anderson",
+    email: "daniel.anderson@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  },
+  {
+    id: 10,
+    name: "Olivia Thomas",
+    email: "olivia.thomas@example.com",
+    image: "https://images.unsplash.com/photo-1771132666487-3d7a048a36df?q=80&w=678&auto=format&fit=crop"
+  }
+]
+
+
+<View style={styles.container}>
+
+      <FlatList
+        data={dummy}
+        keyExtractor={(item) => item.id.toString()}
+        contentContainerStyle={{ padding: 10 }}
+        renderItem={({ item }) => (
+          <View style={styles.card}>
+
+            <Image
+              style={styles.image}
+              source={{ uri: item.image }}
+            />
+
+            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.email}>{item.email}</Text>
+
+          </View>
+
+          
+      <FlatList
+        data={dummy}
+        keyExtractor={(item) => item.id.toString()}
+        contentContainerStyle={{ padding: 10 }}
+        renderItem={({ item }) => (
+          <View style={styles.card}>
+
+            <Image
+              style={styles.image}
+              source={{ uri: item.image }}
+            />
+
+            <Text style={styles.name}>{item.name}</Text>
+            <Text style={styles.email}>{item.email}</Text>
+
+          </View>
+        )}
+      />
+
+
+
+
+
+
+      import { StyleSheet, Text, View, TextInput, Button } from 'react-native'
+import React, { useState } from 'react'
+
+const App = () => {
+
+  const [text, setText] = useState("")
+  const [result, setResult] = useState("")
+
+  return (
+    <View style={styles.container}>
+
+      <Text style={styles.title}>App</Text>
+
+      <TextInput
+        placeholder="Enter text here"
+        style={styles.input}
+        value={text}
+        onChangeText={(val) => setText(val)}
+      />
+
+      <Button
+        title="Submit"
+        onPress={() => setResult(text)}
+      />
+
+      <Text style={styles.result}>Result: {result}</Text>
+
+    </View>
+  )
+}
+
+export default App
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#dadada",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 10
+  },
+
+  title: {
+    fontSize: 20,
+    fontWeight: "500"
+  },
+
+  input: {
+    width: "80%",
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 5,
+    backgroundColor: "white"
+  },
+
+  result: {
+    marginTop: 10,
+    fontSize: 16
+  }
+})
+
+
+
+// navigation
+
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+
+import Home from './src/screens/Home'
+import Profile from './src/screens/Profile'
+import Search from './src/screens/Search'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+
+const Stack = createNativeStackNavigator()
+
+const tab = createBottomTabNavigator();
+
+const StackNavigator = () => {
+  
+}
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="Profile"
+          component={Profile}
+        />
+
+        <Stack.Screen
+          name="Search"
+          component={Search}
+        />
+
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
+
+export default App
+
+
+
+
+home.jsx 
+import { Text, View, Button } from 'react-native'
+import React from 'react'
+
+const Home = ({ navigation }) => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <Text style={{ fontSize: 20, fontWeight: '500' }}>
+        Home
+      </Text>
+
+      <Button
+        title="Profile"
+        onPress={() => navigation.navigate('Profile', {id: 1, name: "Lolu"})}
+      />
+    </View>
+  )
+}
+
+export default Home
+
+
+Profile
+
+import React from 'react'
+import { Text, View, Button, StyleSheet } from 'react-native'
+
+const Profile = ({ navigation, route }) => {
+
+  const id = route?.params?.id || 0
+  const name = route?.params?.name || 'No Name'
+
+  return (
+    <View style={styles.container}>
+
+      <Text style={styles.heading}>
+        Profile Screen
+      </Text>
+
+      <Text style={styles.text}>
+        id: {id} , Name: {name}
+      </Text>
+
+      <Button
+        title="Search"
+        onPress={() => navigation.navigate('Search')}
+      />
+
+    </View>
+  )
+}
+
+export default Profile
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  heading: {
+    fontSize: 20,
+    marginBottom: 10,
+  },
+
+  text: {
+    fontSize: 18,
+    marginBottom: 20,
+  },
+})
+
+
+Search
+
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const Search = () => {
+  return (
+    <View>
+      <Text>Search</Text>
+    </View>
+  )
+}
+
+export default Search
+
+const styles = StyleSheet.create({})
+
+
+
+
+app.jsx
+
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+
+import Home from './src/screens/Home'
+import Profile from './src/screens/Profile'
+import Search from './src/screens/Search'
+
+import Icon from 'react-native-vector-icons/AntDesign'
+
+const Tab = createBottomTabNavigator()
+
+function TabNavigator() {
+  return (
+    <Tab.Navigator>
+
+      <Tab.Screen
+        name="Home"
+        component={Home}
+        options={{
+          tabBarIcon: () => (
+            <Icon
+              name="home"
+              size={30}
+              color="#900"
+            />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarIcon: () => (
+            <Icon
+              name="user"
+              size={30}
+              color="#900"
+            />
+          ),
+        }}
+      />
+
+      <Tab.Screen
+        name="Search"
+        component={Search}
+        options={{
+          tabBarIcon: () => (
+            <Icon
+              name="search1"
+              size={30}
+              color="#900"
+            />
+          ),
+        }}
+      />
+
+    </Tab.Navigator>
+  )
+}
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
+  )
+}
+
+export default App

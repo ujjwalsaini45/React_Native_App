@@ -73,3 +73,13 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Secrets & local environment (never commit credentials)
+.env
+.env.*
+!.env.example
+
+# Native build outputs (explicit paths; also covered by `build/` above)
+android/build/
+android/app/build/
+ios/build/

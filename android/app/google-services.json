@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1043712223757",
+    "project_id": "link-d0eac",
+    "storage_bucket": "link-d0eac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043712223757:android:a690c5bf4f6265e2d7c344",
+        "android_client_info": {
+          "package_name": "com.smartdukaan.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKaabGuEqPAX-S2PHkj2iU93dYNmycVVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}  
