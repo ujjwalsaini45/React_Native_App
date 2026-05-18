@@ -2,7 +2,7 @@
 
 ## 📱 Live APK Download
 
-[Download Smart Dukkan APK](https://appdistribution.firebase.google.com/testerapps/1:5725383568:android:a123a1d20a64e40d8fa115/releases/4jve4ehpnpr50?utm_source=firebase-console)
+[Download Smart Dukkan APK]https://appdistribution.firebase.google.com/testerapps/1:5725383568:android:a123a1d20a64e40d8fa115/releases/4jve4ehpnpr50?utm_source=firebase-console
 
 ---
 
