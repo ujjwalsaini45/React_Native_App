@@ -2,15 +2,17 @@
 
 ## 📱 Live APK Download
 
-[Download Smart Dukkan APK]https://appdistribution.firebase.google.com/testerapps/1:5725383568:android:a123a1d20a64e40d8fa115/releases/4jve4ehpnpr50?utm_source=firebase-console
+[Download Smart Dukkan APK](https://drive.google.com/file/d/1o9RWFX_ioPpZ0Kq5QcZlOkKWsaFZWsya/view?usp=sharing)
 
 ---
+
+## 🚀 About The Project
 
 Smart Dukkan is a modern React Native mobile application designed to provide a smooth and user-friendly shopping experience. The app focuses on fast performance, clean UI, and efficient product browsing.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 - Modern and responsive UI
 - Product browsing experience
@@ -18,6 +20,7 @@ Smart Dukkan is a modern React Native mobile application designed to provide a s
 - Firebase integration
 - Android APK support
 - Smooth mobile performance
+- Clean mobile design
 
 ---
 
@@ -45,7 +48,7 @@ Install dependencies:
 npm install
 ```
 
-Run the app:
+Run the application:
 
 ```bash
 npx react-native run-android
@@ -72,7 +75,7 @@ Smart-Dukkan/
 
 ## 📸 Screenshots
 
-Add your app screenshots here.
+Add your application screenshots here.
 
 Example:
 
@@ -84,7 +87,7 @@ Example:
 
 ## 🔥 Firebase Integration
 
-This project uses Firebase for backend services and app distribution.
+This project uses Firebase for backend services and app functionality.
 
 ---
 
@@ -100,7 +103,7 @@ Ujjwal Saini
 
 ## 📌 Future Improvements
 
-- Payment Gateway
+- Online Payments
 - Order Tracking
 - Push Notifications
 - Admin Dashboard
@@ -110,4 +113,4 @@ Ujjwal Saini
 
 ## ⭐ Support
 
-If you like this project, give it a star on GitHub ⭐<img width="1920" height="1080" alt="Screenshot (890)" src="https://github.com/user-attachments/assets/dc260eab-9a3b-4c6d-9d5a-1fc7e727e869" />
+If you like this project, give it a star on GitHub ⭐
